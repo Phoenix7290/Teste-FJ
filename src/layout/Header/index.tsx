@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
-import Logo from "../../assets/image/gym.svg"
+import Logo from "../../assets/image/gym.svg";
 
 const Header = () => {
   const [menuIsActive, setMenuIsActive] = useState(false);
@@ -34,7 +34,7 @@ const Header = () => {
   }, [isDarkMode]);
 
   return (
-    <header className="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between items-center border-b-2 dark:border-gray-700">
+    <header className="bg-transparent dark:bg-slate-800 shadow-md p-4 flex justify-between items-center border-b-2 dark:border-gray-700 relative z-20">
       <hgroup className="flex items-center gap-4">
         <img src={Logo} alt="Logo" className="w-12 h-12 md:w-16 md:h-16" />
         <h1 className="text-3xl font-bold text-gray-900 dark:text-white">FJ Personal</h1>
@@ -45,7 +45,7 @@ const Header = () => {
           className="text-3xl cursor-pointer text-gray-900 dark:text-white"
         />
       </div>
-      <nav className={`md:flex ${menuIsActive ? 'block' : 'hidden'} absolute md:static top-16 left-0 w-full md:w-auto bg-white dark:bg-gray-800 md:bg-transparent`}>
+      <nav className={`md:flex ${menuIsActive ? 'block' : 'hidden'} absolute md:static top-16 left-0 w-full md:w-auto bg-white dark:bg-gray-800 md:bg-transparent z-30`}>
         <ul className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 p-4 md:p-0">
           <li>
             <Link to="/" className="text-lg text-gray-900 dark:text-white">Home</Link>
@@ -54,11 +54,8 @@ const Header = () => {
             <Link to="/personal/" className="text-lg text-gray-900 dark:text-white">Personais</Link>
           </li>
           <li>
-            <button 
-              onClick={toggleTheme}
-              className="bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-white py-1 px-3 rounded w-72 md:w-auto md:px-8"
-            >
-              {isDarkMode ? "Modo Claro" : "Modo Escuro"}
+            <button onClick={toggleTheme} className="text-lg text-gray-900 dark:text-white">
+              {isDarkMode ? 'Light Mode' : 'Dark Mode'}
             </button>
           </li>
         </ul>
