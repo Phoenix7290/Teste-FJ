@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🏋️‍♂️ FJ Academia – Projeto de Extensão Universitária
 
-Currently, two official plugins are available:
+Este projeto é parte de uma atividade de extensão universitária do curso de Engenharia de Software, com o objetivo de construir um site profissional para a academia **FJ Academia**, promovendo sua presença digital e facilitando o contato com seus alunos e interessados.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Objetivos do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Criar uma presença online para a academia FJ com um site responsivo e moderno;
+- Exibir informações institucionais, como história da academia e fundadores;
+- Apresentar os personais com fotos, informações e links para contato;
+- Permitir o contato direto via WhatsApp e redes sociais;
+- Utilizar tecnologias modernas de desenvolvimento Front-end (React + TailwindCSS);
+- Aplicar boas práticas de design de interface com prototipação em Figma;
+- Documentar o processo com metodologia ágil (Scrum) e entregas organizadas por sprints.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Tecnologias Utilizadas
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- React.js
+- TailwindCSS
+- React Router DOM
+- Figma (prototipação)
+- Vercel (deploy)
+- Git/GitHub (versionamento)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📄 Estrutura do Site
+
+- **Home:** Apresentação da academia e vídeo institucional em background;
+- **Personais:** Página com cards dos personais (12), clicáveis para visualização individual;
+- **Detalhes do Personal:** Página dedicada com informações e contatos;
+- **Sobre o Fundador:** Breve história e missão;
+- **Rodapé:** Links rápidos e botões de contato (WhatsApp, Instagram, Facebook).
+
+---
+
+## 🧩 Funcionalidades Implementadas
+
+- Layout responsivo (mobile e desktop)
+- Cards interativos dos personais
+- Página individual para cada personal
+- Botões de contato direto via redes sociais
+- SEO básico e otimização de performance
+
+---
+
+## 👨‍💼 Autor
+
+**Marcos Ryan Silva Santos**  
+Graduando em Engenharia de Software  
+Projeto orientado pelo Prof. Dácio  
+
+---
+
+## 📬 Contato
+
+[GitHub](https://github.com/Phoenix7290)  
